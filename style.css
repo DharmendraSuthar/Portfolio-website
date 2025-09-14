@@ -306,11 +306,12 @@ body {
 
 .contact-form .form-control {
     padding: 10px 10px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .contact-form{
-    width: 550px;
+    min-width:350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
