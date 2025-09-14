@@ -4,7 +4,7 @@
 📂 **Repository:** [GitHub Repo](https://github.com/dharmendrasuthar/Portfolio-website)
 
 ### 🏠 Home Page
-![Home Page](Screenshot/Screenshot Home page.png)
+![Home Page](screenshot/Home-page.png)
 
 ## 📖 About the Project
 
@@ -20,7 +20,7 @@ A passionate **Frontend Developer** skilled in HTML, CSS, JavaScript, and other 
 
 ---
 ### 💼 About Page
-![About Page](Screenshot/creenshot About page.png)
+![About Page](screenshot/About-page.png)
 
 ## 🛠️ Tech Stack
 
@@ -33,7 +33,7 @@ A passionate **Frontend Developer** skilled in HTML, CSS, JavaScript, and other 
 
 
 ### 📬 Skills Page
-![Skills Page](Screenshot/Screenshot Skills page.png)
+![Skills Page](screenshot/Skills-page.png)
 
 ## 📂 Project Structure
 
