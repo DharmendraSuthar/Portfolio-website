@@ -1,0 +1,513 @@
+/* Applying Google font over the website  */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Styling menu icon */
+.nav-menu {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+/* Styling navbar links  */
+.navbar-nav a {
+    color: black;
+    position: relative;
+}
+
+.navbar-nav a:hover {
+    color: #fca61f;
+}
+
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/* Styling contact btn  */
+.c-btn {
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Styling home section starts */
+.home {
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+
+.home h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.typing-container {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: 1.5rem;
+        white-space: initial;
+    }
+}
+
+.c-orange {
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home p {
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.h-btn:hover {
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover {
+    color: #6f34fe;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Adding animation to home section image  */
+.home img {
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-24px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* about-me section starts */
+.about-me{
+    background-color: #f3f3f3d0;
+}
+.about-me-info{
+    font-size: large;
+}
+
+
+.heading small {
+    color: #6f34fe;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.heading h3 {
+    margin-top: 0.5rem;
+    /* color: #3f396d; */
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* Expertise Services section starts */
+/* Skill section starts */
+#skills {
+    background-color: rgb(234, 234, 249);
+}
+/* <!-- ===== My Skills Section ===== --> */
+
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.section-title {
+  color: #0070f3;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.section-subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+/* Portfolio section starts */
+#myBtnContainer {
+    margin-bottom: 45px;
+}
+
+#myBtnContainer button {
+    border: none;
+    color: black;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#myBtnContainer button:hover {
+    color: #fca61f;
+}
+
+#myBtnContainer button:focus {
+    outline: none;
+}
+
+#skillsBtnContainer {
+    background-color: #FCA61F;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 5px;
+    user-select: none;
+}
+
+#skillsBtnContainer button {
+    border: none;
+    color: white;
+    background: #FCA61F;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#skillsBtnContainer button.active {
+    background-color: #6f34fe;
+    color: white;
+}
+
+#skillsBtnContainer button:hover:not(.active) {
+    background-color: #7134fe4b;
+    color: white;
+}
+
+#skillsBtnContainer button:focus {
+    outline: none;
+}
+
+.post .content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.post .card {
+    border: none;
+}
+
+/* Contact section starts */
+.contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-details{
+    padding-top: 80px;
+}
+.contact-details i {
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+
+.contact-form .form-control {
+    padding: 10px 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-form{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Footer section starts */
+footer {
+    background-color: #211e39;
+}
+
+footer .link-group a {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+footer .link-group a:hover {
+    color: #fca61f;
+}
+
+
+
+/* Styling back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .home h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    
+    .c-orange {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .home h2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    
+    .c-orange {
+        font-size: 3rem;
+    }
+    
+    .heading h3 {
+        font-size: 2rem;
+    }
+    
+    .progress-card {
+        margin: 0 auto 20px;
+    }
+    
+    .skill-with-progress {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+    
+    .home h2 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    
+    .c-orange {
+        font-size: 2.5rem;
+    }
+    
+    .heading h3 {
+        font-size: 1.8rem;
+    }
+    
+    .heading small {
+        font-size: 1.2rem;
+    }
+    
+    .service-card {
+        margin-bottom: 30px;
+    }
+    
+    #myBtnContainer button {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    #skillsBtnContainer button {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    
+    .contact-form .form-control {
+        width: 100%;
+    }
+
+    footer .link-group a {
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
+    .c-orange {
+        font-size: 2rem;
+    }
+    
+    .heading h3 {
+        font-size: 1.5rem;
+    }
+    
+    .heading small {
+        font-size: 1rem;
+    }
+    
+    .c-btn {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+    
+    .h-btn {
+        padding: 12px 30px;
+    }
+    
+    #myBtnContainer button {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    #skillsBtnContainer button {
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    .progress-card {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circular-progress {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .circular-progress::before {
+        height: 43px;
+        width: 43px;
+    }
+    
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+
+/* Animation for back to top button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

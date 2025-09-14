@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Dharmendra Suthar</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS Library css file cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" href="#contact"><a class="nav-link" href="#contact">Contact</a></button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-items-center">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hi, I'm  <br /><span class="c-orange">Dharmendra Suthar</span>
+          </h2>
+          <div class="typing-container">
+            <div class="typing-text" id="typingElement"></div>
+        </div>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="ds-bgremove-1.png" class="img-fluid" alt=""  />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- About me section starts -->
+    <section class="about-me py-5" id="about-me">
+      <div class="heading text-center">
+        <small>About</small>
+        <h3>Who I Am</h3>
+      </div>
+      <div class="row justify-content-evenly align-items-center mt-5">
+        <div class="col-10 col-md-4 d-none d-md-block" data-aos="slide-right">
+           <img src="ds-bgremove-2.png" class="img-fluid" alt="" id="ds-image"/>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="about-me-info">
+             <p>
+              My name is <b>Dharmendra Suthar</b>, and I am a passionate
+              <b>Frontend Developer</b>. I love combining design and technology
+              to create modern, responsive, and user-friendly applications.
+            </p>
+            <p>
+              Skilled in <b>HTML, CSS, JavaScript, Python, Node.js, MySQL, DBMS,
+              R, C, and C++</b>. I focus on writing clean code, solving problems,
+              and continuously learning new technologies.
+            </p>
+            <p>
+              My goal is to deliver creative, scalable, and efficient solutions
+              that enhance user experience and bring ideas to life.
+            </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- About me section ends here -->
+
+<!-- ===== My Skills Section ===== -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="heading text-center">
+        <small>My Skills</small>
+            <h3>Technical Expertise</h3>
+      </div>
+      <div id="skillsBtnContainer" class="text-center mt-4" data-toggle-box>
+        <button class="skills-filter-item active" data-filter="language" data-toggle-btn>Languages</button>
+        <button class="skills-filter-item" data-filter="tool" data-toggle-btn>Tools</button>
+      </div>
+      <div class="skills-grid">
+      <!-- HTML & CSS -->
+        <div class="skill-card language">
+          <img src="html logo.png" alt="HTML Logo">
+          <p>HTML</p>
+        </div>
+
+        <div class="skill-card language">
+          <img src="css logo.png" alt=" CSS Logo">
+          <p>CSS</p>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card language">
+          <img src="js logo.png" alt="JavaScript Logo">
+          <p>JavaScript</p>
+        </div>
+
+      <!-- C / C++ -->
+        <div class="skill-card language">
+        <img src="c logo.jpg" alt="C Logo">
+        <p>C Language</p>
+        </div>
+
+      <div class="skill-card language">
+        <img src="c++.png" alt="c++ Logo">
+        <p>C++</p>
+      </div>
+
+      <!-- MySQL / DBMS -->
+      <div class="skill-card language">
+        <img src="my sql logo.png" alt="MySQL Logo">
+        <p>MySQL</p>
+    </div>
+
+        <!-- Python -->
+        <div class="skill-card language">
+          <img src="python logo.png" alt="Python Logo">
+          <p>Python</p>
+        </div>
+
+        <!-- Node.js -->
+      
+        <div class="skill-card language">
+          <img src="nodejs logo.png" alt="Node.js Logo">
+          <p>Node.js</p>
+        </div>
+
+        <div class="skill-card language">
+          <img src="java logo.png" alt="JAVA Logo">
+          <p>Java</p>
+        </div>
+
+        <div class="skill-card language">
+        <img src="jquery.png" alt="jquery Logo">
+        <p>Jquery</p>
+        </div>
+
+      <!-- R Language -->
+        <div class="skill-card language">
+        <img src="R logo.png" alt="R Language Logo">
+        <p>R Language</p>
+        </div>
+
+      <!-- DBMS -->
+        <div class="skill-card language">
+        <img src="dbms logo.png" alt="DBMS Logo">
+        <p>DBMS</p>
+        </div>
+
+        <div class="skill-card language">
+        <img src="angular logo.png" alt="AngularJs">
+        <p>AngularJs</p>
+        </div>
+
+      <!-- Tools -->
+      <div class="skill-card tool">
+        <img src="chatgpt logo.png" alt="Chatgpt Logo">
+        <p>Chatgpt</p>
+      </div>
+      <div class="skill-card tool">
+        <img src="canva logo.png" alt="Canva logo">
+        <p>Canva</p>
+      </div>
+      <div class="skill-card tool">
+        <img src="excel logo.png" alt="Excel logo">
+        <p>Excel</p>
+      </div>
+      <div class="skill-card tool">
+        <img src="vs logo.png" alt="Visual Studio logo">
+        <p>Visual Studio</p>
+      </div>
+      <div class="skill-card tool">
+        <img src="Github logo.png" alt="Github Logo">
+        <p>Github</p>
+      </div>
+      <div class="skill-card tool">
+        <img src="git logo.png" alt="git logo">
+        <p>Git</p>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- expertise section starts -->
+   <!-- Services Section -->
+    <section class="services py-5 bg-light" id="services">
+      <div class="container">
+        <div class="heading text-center">
+          <small>My Expertise</small>
+          <h3>Services</h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow rounded bg-white h-100" data-aos="zoom-in">
+              <i class="bi bi-palette fs-1 text-warning"></i>
+              <h5 class="mt-3">Web Design</h5>
+              <p>I design clean, modern, and responsive websites with a focus on usability and user experience.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow rounded bg-white h-100" data-aos="zoom-in">
+              <i class="bi bi-laptop fs-1 text-primary"></i>
+              <h5 class="mt-3">Web Development</h5>
+              <p>I build functional websites and web apps using modern frameworks and clean, scalable code.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow rounded bg-white h-100" data-aos="zoom-in">
+              <i class="bi bi-bug-fill fs-1 text-danger"></i>
+              <h5 class="mt-3">Debugging</h5>
+              <p>I quickly identify and fix errors in code, ensuring smooth and optimized performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>My Projects</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item active" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="Snake game .png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Snake Game</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+                <a href="#" class="link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all webapp col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="Amazn leout.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title"> Amazon Layout</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all webapp col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="gym system .png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">GYM System</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+
+    <!-- contact section starts -->
+    <section class="contact py-5 bg-light" id="contact">
+      <div class="contact-wrapper">
+        <div class="heading text-center">
+          <small>Get In Touch</small>
+          <h3>Contact Me</h3>
+        </div>
+        <div class="row justify-content-center">
+            <form class="contact-form " method="POST" action="https://api.web3forms.com/submit" onsubmit="return validateForm()">
+              <input type="hidden" name="access_key" value="6371720d-8704-4c3e-bde0-2cbcd6fb9909" />
+              <input type="text" class="form-control mb-3" placeholder="Name" name="Name" id="nameInput"/>
+              <div class="error" id="nameError"></div>
+              <input type="email" class="form-control mb-3" placeholder="Email" name="email" id="emailInput"/>
+              <div class="error" id="emailError"></div>
+              <input type="text" class="form-control mb-3" placeholder="Mobile No." name="Mobile no" id="mobileInput"/>
+              <div class="error" id="mobileError"></div>
+              <textarea class="form-control mb-3" placeholder="Message" rows="3" name="message" id="messageInput"></textarea>
+              <div class="error" id="messageError"></div>
+              <button type="submit" class="c-btn h-btn py-3 px-5 rounded-pill">Submit</button>
+            </form>
+          </div>
+        </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about-me">About</a>
+        <div class="vr"></div>
+        <a href="#skills">Skills</a>
+        <div class="vr"></div>
+        <a href="#services">Services</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright @ 2025  Dharmendra Suthar| All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
