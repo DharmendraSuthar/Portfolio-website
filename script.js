@@ -11,16 +11,19 @@ document.addEventListener('DOMContentLoaded', function() {
   let charIndex = 0;
   let isDeleting = false;
   let typingSpeed = 80;
+  
+  // Initialize with cursor
+  typingElement.innerHTML = '<span class="cursor">_</span>';
 
   function typeWriter() {
     const currentText = texts[textIndex];
     
     if (isDeleting) {
-        typingElement.textContent = currentText.substring(0, charIndex - 1);
+        typingElement.innerHTML = currentText.substring(0, charIndex - 1) + '<span class="cursor">_</span>';
         charIndex--;
         typingSpeed = 50;
     } else {
-        typingElement.textContent = currentText.substring(0, charIndex + 1);
+        typingElement.innerHTML = currentText.substring(0, charIndex + 1) + '<span class="cursor">_</span>';
         charIndex++;
         typingSpeed = 100;
     }

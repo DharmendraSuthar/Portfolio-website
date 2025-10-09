@@ -71,6 +71,23 @@ body {
     }
 }
 
+/* Blinking cursor for typing effect */
+.cursor {
+    display: inline-block;
+    animation: blink 0.8s infinite;
+    color: #fca61f;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
 .c-orange {
     color: #6f34fe;
     font-weight: 700;
